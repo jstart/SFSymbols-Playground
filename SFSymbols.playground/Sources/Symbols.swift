@@ -391,6 +391,7 @@ arrow.up.square
 arrow.up.square.fill
 arrow.up.to.line
 arrow.up.to.line.alt
+arrow.upright.circle
 arrow.uturn.down
 arrow.uturn.down.circle
 arrow.uturn.down.circle.fill

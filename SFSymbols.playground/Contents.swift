@@ -40,11 +40,12 @@ struct ContentView: View {
         
         return NavigationView {
             List(list) { index in
-                NavigationButton(destination: SymbolDetail(symbol: symbols[index])) {
+                NavigationLink(destination: SymbolDetail(symbol: symbols[index])) {
                     SymbolRow(symbol: symbols[index])
                 }
-            }
-        }.navigationBarTitle(Text("SF Symbols"))
+            }.navigationBarTitle(Text("SF Symbols"))
+            Image(systemName: "gobackward.10.hi")
+        }
     }
 }
 
