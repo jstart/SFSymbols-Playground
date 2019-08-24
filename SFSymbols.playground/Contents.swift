@@ -44,7 +44,6 @@ struct ContentView: View {
                     SymbolRow(symbol: symbols[index])
                 }
             }.navigationBarTitle(Text("SF Symbols"))
-            Image(systemName: "gobackward.10.hi")
         }
     }
 }
