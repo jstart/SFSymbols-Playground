@@ -27,7 +27,6 @@ struct SymbolDetail: View {
                 .scaleEffect(3.0)
                 .padding(.bottom, 100)
             Divider()
-//                .animation(Animation.basic().delay(0.25))
             Text(symbol).font(.headline)
         }
     }
@@ -40,11 +39,11 @@ struct ContentView: View {
         
         return NavigationView {
             List(list) { index in
-                NavigationButton(destination: SymbolDetail(symbol: symbols[index])) {
+                NavigationLink(destination: SymbolDetail(symbol: symbols[index])) {
                     SymbolRow(symbol: symbols[index])
                 }
-            }
-        }.navigationBarTitle(Text("SF Symbols"))
+            }.navigationBarTitle(Text("SF Symbols"))
+        }
     }
 }
 
